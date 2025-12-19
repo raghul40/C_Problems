@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
     int i,d1,sum;
-    i=71;
+    i=10;
     sum=0;
     Loop:
     d1=i/10;
@@ -9,7 +9,7 @@ int main(){
         if(i%2!=0)
           sum=sum+i;
     i++;
-    if(i<=79)
+    if(i<=99)
       goto Loop;
       
     printf("%d\n",sum);
