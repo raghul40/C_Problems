@@ -29,5 +29,7 @@ int main()
     }
     else{
         printf("Not Prime");
+        if(sum == 14)
+           printf(" but sum of digits is %d",sum);
     }
 }
