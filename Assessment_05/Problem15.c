@@ -1,22 +1,24 @@
 #include<stdio.h>
-int main(){
-    int num,a,temp,first,result;
-    a=1;
-    result=0;
+int main()
+{
+    int n,temp,first,result,d;
+    d = 1;
+    result = 0;
     printf("Enter an number : ");
-    scanf("%d",&num);
-    temp = num;
-    for(;temp>=10;temp/=10)
+    scanf("%d",&n);
+    temp = n ;
+    for(;n>=10;n/=10)
     {
-        a = a * 10 ;
+        d = d * 10;
     }
-    first = temp ;
-    if(first%2 == 0){
-        result = num ;
+    first = n;
+    if(first % 2 != 0)
+    {
+        result = temp - d;
     }
-    if(first%2 != 0){
-        result = num - a ;
+    if(first % 2 == 0)
+    {
+        result = temp;
     }
     printf("%d",result);
-    
 }
