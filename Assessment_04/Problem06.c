@@ -1,12 +1,15 @@
 #include<stdio.h>
-int main(){
-    int i;
-    i=11;
-    Loop:
-    if(i%2!=0)
-        printf("%d\n",i);
-    i++;
-    if(i<20)
-        goto Loop;
-    return 0;
+int main()
+{
+    int n;
+    n=11;
+    Loop:if(n<20)
+    {
+      if(n % 2 != 0)
+      {
+          printf("%d\n",n);
+      }
+      n++;
+      goto Loop;
+    }
 }
