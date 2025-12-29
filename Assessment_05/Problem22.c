@@ -1,19 +1,15 @@
 #include<stdio.h>
 int main(){
-    int num,count,temp,digit;
-    count = 0;
+    int num,d,count=0;
     printf("Enter an number : ");
     scanf("%d",&num);
-    temp = num ;
-    for(;temp>=10;)
+    for(;num>=10;num/=10)
     {
-        digit = temp % 100;
-        if(digit % 2 != 0)
+        d = num % 100 ;
+        if (d % 2 != 0)
         {
-            count = count+1;
+            count = count + 1;
         }
-        temp = temp / 10;
     }
     printf("%d",count);
-    return 0;
 }
