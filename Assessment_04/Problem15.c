@@ -1,25 +1,20 @@
 #include<stdio.h>
 int main(){
-    int num,first,temp,result,a;
-    a = 1;
+    int n,first,temp,res,d;
+    d= 1;
     printf("Enter an number : ");
-    scanf("%d",&num);
-    temp = num;
-    First:
-    if(temp>=10){
-        temp = temp/10;
-        a = a*10;
-        goto First;
+    scanf("%d",&n);
+    temp = n;
+    Loop:
+    if(n>=10){
+        n = n/10;
+        d = d*10;
+        goto Loop;
     }
-    first = temp;
-    if(first%2 == 0){
-        result = num;
-        goto Print;
+    first = n;
+    if(first%2 != 0)
+    {
+        res = temp - d;
     }
-    if(first%2 != 0){
-        result = num - a;
-        goto Print;
-    }
-    Print:
-    printf("%d",result);
+    printf("%d",res);
 }
