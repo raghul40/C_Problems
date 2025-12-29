@@ -1,28 +1,23 @@
 #include<stdio.h>
 int main(){
-    int num,i,flag,temp,mid;
-    flag=0;
-    printf("Enter an 4-digit number :" );
+    int num,i,last;
+    printf("Enter an 4-digit number : ");
     scanf("%d",&num);
-    temp = num / 10;
-    mid = temp % 100;
-    if(mid<=1){
+    last = (num % 1000)/10 ;
+    if(last<0){
         printf("Not Prime");
-        goto End;
+        goto end;
     }
-    for(i=2;i<mid;i++){
-        if(mid%i == 0){
-            flag = 1;
+    for(i=2;i<last;i++)
+    {
+        if(last % i == 0)
+        {
+            printf("Not Prime");
+            goto end;
         }
     }
-    if(flag == 0){
-        printf("Prime");
-        goto End;
-    }
-    else{
-        printf("Not Prime");
-        goto End;
-    }
-    End:
-    return 0 ;
+    printf("Prime");
+    end:
+    return 0;
 }
+
