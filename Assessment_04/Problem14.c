@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,original,first,mid,last,d,result;
+    int n,original,first,mid,last,d,o;
     d=1;
     printf("Enter an number : ");
     scanf("%d",&n);
@@ -16,6 +16,6 @@ int main()
     last = last * d;
     first = n;
     mid = (original % d) / 10 ;
-    result = last + (mid*10) + first;
-    printf("%d",result);
+    o = last + (mid*10) + first;
+    printf("%d",o);
 }
