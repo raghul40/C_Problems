@@ -1,21 +1,14 @@
-#include<stdio.h>
-int main(){
-    int i,j,count,f;
-    f=0;
-    for(i=2;i<=9;i++)
+#include <stdio.h>
+int main()
+{
+    int i, count = 0;
+    for(i = 2; i <= 9; i++)
     {
-        f = 0;
-        for(j=2;j<i;j++)
+        if(i == 2 || i == 3 || i == 5 || i == 7)
         {
-          if(i%j == 0)
-          {
-            f = 1;
-          }
+            count = count + 1;
         }
-    if(f == 0)
-     {
-        count = count + 1;
-     }
     }
-    printf("%d",count);
+    printf("%d", count);
+    return 0;
 }
