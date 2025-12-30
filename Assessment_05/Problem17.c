@@ -1,34 +1,38 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int n, i, count = 0;
-    int temp,digit,sum = 0;
+    int num,i,count = 0;
+    int digit,sum = 0;
     printf("Enter an number : ");
-    scanf("%d", &n);
-    for(i = 2; i < n; i++)
+    scanf("%d",&num);
+    for(i=2;i<num;i++)
     {
-        if(n % i == 0)
+        if(num % i == 0)
         {
             count = 1;
             break;
         }
     }
-    temp = n;
-    for( ; temp > 0 ;temp/=10)
+    for(;num>10;num/=10)
     {
-        digit = temp % 10 ;
+        digit = num % 10 ;
         sum = sum + digit;
     }
-    /* Final Output */
     if(count == 0 && sum == 14)
+    {
         printf("Prime & sum of digits is 14");
-    else if(count != 0 && sum == 14)
-        printf("Not Prime but sum of digits is 14");
-    else if(count == 0 && sum != 14)
-        printf("Prime & sum of digits is not 14");
-    else
+    }
+    if(count != 0 && sum == 14)
+    {
+         printf(" Not Prime but sum of digits is 14");
+    }
+    if(count == 0 && sum != 14)
+    {
+         printf("Prime & sum of digits is not 14");
+    }
+    if(count != 0 && sum != 14)
+    {
         printf("Not Prime & sum of digits is not 14");
-
+    }
     return 0;
 }
-
