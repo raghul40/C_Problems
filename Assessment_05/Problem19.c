@@ -1,16 +1,18 @@
 #include<stdio.h>
-int main(){
-    int num,i,last;
-    printf("Enter an 4-digit number : ");
+int main()
+{
+    int num,i,digits;
+    printf("Enter an 4- digit number : ");
     scanf("%d",&num);
-    last = (num % 1000)/10 ;
-    if(last<0){
+    digits = (num % 1000)/10 ;
+    if(digits<0)
+    {
         printf("Not Prime");
         goto end;
     }
-    for(i=2;i<last;i++)
+    for(i=2;i<digits;i++)
     {
-        if(last % i == 0)
+        if(digits % i == 0)
         {
             printf("Not Prime");
             goto end;
