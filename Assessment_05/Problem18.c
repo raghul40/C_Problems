@@ -1,24 +1,24 @@
 #include<stdio.h>
 int main()
 {
-    int num,d;
-    d=2;
+    int num,i,digits;
     printf("Enter an number : ");
     scanf("%d",&num);
-    if(num < 0)
+    digits = num % 100 ;
+    if(digits<0)
     {
         printf("Not Prime");
-        goto last;
+        goto end;
     }
-    Loop:if(d<num){
-        if(num%d == 0)
+    for(i=2;i<digits;i++)
+    {
+        if(digits % i == 0)
         {
             printf("Not Prime");
-            goto last;
+            goto end;
         }
-        d++;
-        goto Loop;
     }
     printf("Prime");
-    last:return 0;
+    end:
+    return 0;
 }

@@ -1,20 +1,16 @@
 #include<stdio.h>
-int main(){
-    int a,digit,sum;
-    sum=0;
-    printf("Enter a number: ");
-    scanf("%d",&a);
-    if(a == 0)
-    {
-        sum = 0;
-    }
-    Loop:
-        if(a != 0)
-        {
-            digit = a % 10;
-            sum = sum + digit;
-            a = a / 10;
-            goto Loop; 
-        }
-        printf("%d",sum);
+int main()
+{
+   int n,sum,digit;
+   printf("Enter an number : ");
+   scanf("%d",&n);
+   sum = 0;
+   Loop:if(n >0)
+   {
+       digit = n % 10;
+       sum = sum + digit;
+       n = n / 10;
+       goto Loop;
+   }
+   printf("%d",sum);
 }

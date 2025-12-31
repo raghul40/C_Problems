@@ -1,10 +1,12 @@
 #include<stdio.h>
-int main(){
-    int i=1;
-    Loop:
-    printf("%d\n",i);
-    i++;
-    if(i<=5)
+int main()
+{
+    int b;
+    b=1;
+    Loop:if(b<6)
+    {
+        printf("%d\n",b);
+        b=b+1;
         goto Loop;
-    return 0;
+    }
 }

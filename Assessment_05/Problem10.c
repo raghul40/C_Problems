@@ -1,15 +1,15 @@
 #include<stdio.h>
-int main(){
-    int i,sum,d1;
+int main()
+{
+    int d,q,sum;
     sum = 0;
-    for(i=11;i<=99;i++)
+    for(d=10;d<=99;d++)
     {
-        d1 = i / 10;
-        if(d1 == 7){
-            if(i%2 != 0){
-                 sum = sum + i;
-            }
-        }
+       q = d / 10;
+       if((d % 2 != 0) && (q == 7))
+       {
+           sum = sum + d ;
+       }
     }
-    printf("%d\n",sum);
+    printf("%d",sum);
 }

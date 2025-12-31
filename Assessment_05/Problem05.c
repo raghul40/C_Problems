@@ -1,11 +1,10 @@
 #include<stdio.h>
-int main(){
-    int i;
-    for(i=1;i<=10;i++)
-    {
-        if(i%2!=0)
-        {
-            printf("%d\n",i);
+int main()
+{
+    int d;
+    for(d=1;d<10;d++){
+        if(d % 2 != 0){
+            printf("%d\n",d);
         }
     }
 }

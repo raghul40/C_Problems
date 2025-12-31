@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int i;
-    i=5;
-    Loop:
-    printf("%d\n",i);
-    i--;
-    if(i>=1)
+    int d;
+    d=5;
+    Loop:if(d>0)
+    {
+        printf("%d\n",d);
+        d=d-1;
         goto Loop;
+    }
 }

@@ -1,25 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int num,d;
-    d=2;
+    int n,i;
     printf("Enter an number : ");
-    scanf("%d",&num);
-    if(num < 0)
-    {
+    scanf("%d",&n);
+    if(n<0){
         printf("Not Prime");
-        goto last;
+        goto end;
     }
-    Loop:if(d<num){
-        if(num%d == 0)
+    for(i=2;i<n;i++)
+    {
+        if(n % i == 0)
         {
             printf("Not Prime");
-            goto last;
+            goto end;
         }
-        d++;
-        goto Loop;
     }
     printf("Prime");
-    last:
+    end:
     return 0;
 }

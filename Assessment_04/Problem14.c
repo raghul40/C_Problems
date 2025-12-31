@@ -1,20 +1,21 @@
 #include<stdio.h>
-int main(){
-    int n,first,middle,last,temp,result,a;
-    a=1;
+int main()
+{
+    int n,original,first,mid,last,d,o;
+    d=1;
     printf("Enter an number : ");
     scanf("%d",&n);
-    temp=n;
-    last=n%10;
-    First:
-    if(temp>=10){
-        temp=temp/10;
-        a=a*10;
-        goto First;
+    original = n;
+    last = n % 10;
+    Loop:if(n>=10)
+    {
+        n = n / 10;
+        d = d * 10;
+        goto Loop;
     }
-    first=temp;
-    middle=(n%a)/10;
-    result=(last*a) + (middle*10) + first;
-    printf("%d",result);
-    return 0;
+    last = last * d;
+    first = n;
+    mid = (original % d) / 10 ;
+    o = last + (mid*10) + first;
+    printf("%d",o);
 }

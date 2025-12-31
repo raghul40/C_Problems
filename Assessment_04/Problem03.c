@@ -1,12 +1,14 @@
 #include<stdio.h>
-int  main(){
-    int i,sum;
-    i=1;
+int main()
+{
+    int b,sum;
     sum=0;
-    Loop:
-    sum=sum+i;
-    i++;
-    if(i<=5)
+    b=1;
+    Loop:if(b<6)
+    {
+        sum = sum + b;
+        b=b+1;
         goto Loop;
-        printf("%d",sum);
+    }
+    printf("%d",sum);
 }
