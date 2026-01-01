@@ -5,7 +5,7 @@ int main()
     printf("Enter an number : ");
     scanf("%d",&n);
     i = 2;
-    if(n<0){
+    while(n<0){
         printf("Not Prime");
         goto end;
     }
