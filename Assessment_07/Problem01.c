@@ -8,9 +8,9 @@ int main()
 }
 void disp_assend(int x)
 {
-    int y;
-    for(y=1;y<6;y++)
+    int i;
+    for(i=x;i<6;i++)
     {
-        printf("%d\n",y);
+        printf("%d\n",i);
     }
 }
