@@ -16,7 +16,7 @@ void disp_2digit_odd_sum7(int x)
         sum = q + r;
         if((sum == 7) && (i % 2 != 0))
         {
-            printf("%d\n",i);
+            printf("%d\t",i);
         }
     }
 }
