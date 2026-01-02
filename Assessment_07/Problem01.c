@@ -3,13 +3,14 @@ void disp_assend(int);
 int main()
 {
     int x;
+    scanf("%d",&x);
     disp_assend(x);
 }
 void disp_assend(int x)
 {
-    int i;
-    for(i=1;i<6;i++)
+    int y;
+    for(y=x;y<=5;y++)
     {
-        printf("%d\n",i);
+        printf("%d\n",y);
     }
 }

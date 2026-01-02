@@ -8,9 +8,9 @@ int main()
 }
 void disp_descend(int x)
 {
-    int i;
-    for(i=x;i>=1;i--)
+    int y;
+    for(y=x;y>=1;y--)
     {
-        printf("%d\n",i);
+        printf("%d\n",y);
     }
 }
