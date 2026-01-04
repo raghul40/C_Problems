@@ -1,12 +1,12 @@
 #include<stdio.h>
-void disp_sum_all_digits(int);
+void disp_reverse_number(int);
 int main()
 {
     int x;
     scanf("%d",&x);
-    disp_sum_all_digits(x);
+    disp_reverse_number(x);
 }
-void disp_sum_all_digits(int x)
+void disp_reverse_number(int x)
 {
     int num,rev,digits;
     num = x;
