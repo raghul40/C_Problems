@@ -8,25 +8,25 @@ int main()
 }
 void check_prime_and_sum14(int x)
 {
-    int n,i,digit,count,sum;
-    n = x ;
+    int num,i,digit,count,sum;
+    num = x ;
     digit = 0 ;
     count = 0;
     sum = 0 ;
     i = 2 ;
-    while(i < n)
+    while(i < num)
     {
-        if(n % i == 0)
+        if(num % i == 0)
         {
-            count =1; 
+            count = 1; 
         }
         i = i + 1;
     }
-    while(n > 0)
+    while(num > 0)
     {
-        digit = n % 10;
+        digit = num % 10;
         sum = sum + digit;
-        n = n / 10;
+        num = num / 10;
     }
     if((count == 0) && (sum == 14))
     {

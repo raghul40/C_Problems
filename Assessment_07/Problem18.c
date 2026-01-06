@@ -8,22 +8,22 @@ int main()
 }
 void check_first_2digits_prime(int x)
 {
-    int n,i,digits;
+    int n,a,digits;
     n = x;
-    i = 2;
+    a = 2;
     digits = n % 100;
     while(digits < 0){
         printf("Not Prime");
         goto end;
     }
-    while(i < digits)
+    while(a < digits)
     {
-        if(digits % i == 0)
+        if(digits % a == 0)
         {
             printf("Not Prime");
             goto end;
         }
-        i = i + 1;
+        a = a + 1;
     }
     printf("Prime");
     end:

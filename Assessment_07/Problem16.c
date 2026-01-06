@@ -8,16 +8,16 @@ int main()
 }
 void check_prime(int x)
 {
-    int n,i;
-    n = x;
-    if(n<0)
+    int num,i;
+    num = x;
+    if(num<0)
     {
         printf("Not Prime");
         goto end;
     }
-    for(i=2;i<n;i++)
+    for(i=2;i<num;i++)
     {
-        if(n % i == 0)
+        if(num % i == 0)
         {
             printf("Not Prime");
             goto end;
