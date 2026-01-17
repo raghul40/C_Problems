@@ -8,7 +8,7 @@ int main() {
     {
         scanf("%d", &a[i]);
     }
-    for(i = 0; i < 5; i++) 
+    for(i = 0; i < 5; i++)
     {
         n = a[i];
         flag = 1; 
