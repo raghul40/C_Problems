@@ -9,6 +9,7 @@ int main()
     printf("Enter numbers : \n");
     while(1)
     {
+        scanf("%d", &num);
         if(num == 0)
         {
             break;
@@ -18,6 +19,6 @@ int main()
         count = count + 1;
         i = i + 1;
     }
-    printf("\nTotal Numbers Entered : %d",count);
+    printf("\nTotal Numbers : %d",count);
     printf("\nSum:%d",sum);
 }
